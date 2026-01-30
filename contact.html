@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & Appointment | Sparsh Skin Clinic Akola</title>
+  <meta name="description" content="Book appointment at Sparsh Skin Clinic, Akola. Contact details, clinic timings, Google Map and online appointment form.">
+  <meta name="keywords" content="Skin Clinic Contact Akola, Dermatologist Appointment Akola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#333}
+    header{background:linear-gradient(135deg,#9b1c31,#e85b70);color:#fff;padding:20px}
+    .top{max-width:1100px;margin:auto;display:flex;align-items:center;gap:20px}
+    .top img{height:70px}
+    nav{background:#7a0f22;padding:10px;text-align:center}
+    nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
+    nav a:hover{text-decoration:underline}
+    section{padding:50px 20px}
+    .container{max-width:1100px;margin:auto}
+    h2,h3{color:#9b1c31}
+
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+
+    input,textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ccc;font-size:15px}
+    button{background:#9b1c31;color:#fff;border:none;padding:12px 20px;border-radius:6px;font-size:16px;cursor:pointer}
+    button:hover{background:#7a0f22}
+
+    iframe{width:100%;height:300px;border:0;border-radius:10px}
+
+    footer{background:#222;color:#aaa;text-align:center;padding:15px}
+
+    .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.3)}
+
+    @media(max-width:768px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <img src="sparsh-logo.png" alt="Sparsh Skin Clinic Logo">
+    <div>
+      <h1>Contact & Appointment</h1>
+      <p>Sparsh Skin Clinic, Akola</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="diseases.html">Diseases</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="doctor.html">Doctor</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <div class="container grid">
+
+    <div class="box">
+      <h2>Book Appointment</h2>
+      <form onsubmit="return bookAppointment()">
+        <input type="text" id="name" placeholder="Patient Name" required>
+        <input type="tel" id="phone" placeholder="Mobile Number" required>
+        <input type="email" placeholder="Email (optional)">
+        <textarea placeholder="Your Concern" rows="4"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <h3 style="margin-top:25px">Clinic Timings</h3>
+      <p><strong>Monday – Saturday</strong></p>
+      <p>10:00 AM – 2:00 PM</p>
+      <p>5:00 PM – 8:30 PM</p>
+      <p><strong>Sunday:</strong> By Appointment</p>
+    </div>
+
+    <div class="box">
+      <h2>Contact Details</h2>
+      <p><strong>Phone:</strong> +91 940 528 5862</p>
+      <p><strong>Email:</strong> sparshskinclinic25@gmail.com</p>
+      <p><strong>Address:</strong><br>Palkhi Apartment, Near GMD Market,<br>Jawahar Nagar Main Road,<br>Amankha Plot, Akola</p>
+
+      <h3 style="margin-top:20px">Find Us on Map</h3>
+      <iframe src="https://www.google.com/maps?q=Jawahar%20Nagar%20Akola&output=embed"></iframe>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sparsh Skin Clinic, Akola</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/919405285862" target="_blank">WhatsApp Appointment</a>
+
+<script>
+function bookAppointment(){
+  const name=document.getElementById('name').value;
+  const phone=document.getElementById('phone').value;
+  alert(`Thank you ${name}! We will contact you shortly on ${phone}.`);
+  return false;
+}
+</script>
+
+</body>
+</html>
